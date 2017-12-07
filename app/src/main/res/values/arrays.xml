@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="main_tab_title">
+        <item>主页</item>
+        <item>发现</item>
+        <item>商城</item>
+    </string-array>
+    <string-array name="expert_notice_title">
+        <item>维修保养</item>
+        <item>汽车买卖</item>
+        <item>轮胎</item>
+        <item>电器</item>
+        <item>美容装饰</item>
+        <item>钣金喷漆</item>
+        <item>改装自驾</item>
+        <item>汽车贷款</item>
+        <item>汽车保险</item>
+    </string-array>
+</resources>

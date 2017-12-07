@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:background="@color/listview_item_pressed"/>
+   <TextView
+       android:id="@+id/popupwindow_grade1_textview"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:padding="15dp"
+       android:text="由高到低"
+       android:background="@drawable/backcolor_callback"/>
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:background="@color/listview_item_pressed"/>
+   <TextView
+       android:id="@+id/popupwindow_grade2_textview"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:padding="15dp"
+       android:text="由低到高"
+       android:background="@drawable/backcolor_callback"/>
+</LinearLayout>

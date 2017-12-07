@@ -1,0 +1,360 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/self_driving_detail_activity_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.gtercn.car.activity.SelfDrivingTravelDetailActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/self_driving_detail_activity_reply_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/background_orange"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+
+        <RelativeLayout
+            android:id="@+id/self_driving_detail_activity_reply_relativelayout_renlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/self_driving_detail_activity_reply_relativelayout_rentext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="人回帖"
+                android:textColor="@color/gray_huifu" />
+
+            <TextView
+                android:id="@+id/self_driving_detail_activity_reply_rennumtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/self_driving_detail_activity_reply_relativelayout_rentext"
+                android:text="0"
+                android:textColor="@color/gray_huifu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/self_driving_detail_activity_reply_rennumtext"
+                android:text="已有"
+                android:textColor="@color/gray_huifu" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/self_driving_detail_activity_reply_relativelayout_sendTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/blue2"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="发送"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/self_driving_detail_activity_reply_relativelayout_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/self_driving_detail_activity_reply_relativelayout_sendTextView"
+            android:background="@null"
+            android:hint="回复楼主"
+            android:textColorHint="@color/gray_comment_detail"
+            android:textColor="@color/black_self_drive"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/self_driving_detail_activity_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:layout_scrollFlags="scroll|enterAlways"
+        android:background="#F9F9F9">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:background="@drawable/backcolor_callback"
+                android:id="@+id/self_driving_detail_activity_toolbar_backcall_relativelayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                >
+
+                <ImageView
+
+                    android:id="@+id/self_driving_detail_activity_toolbar_backtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_callback_arrow" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/self_driving_detail_activity_toolbar_backtext"
+                    android:text="返回" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/self_driving_detail_activity_collect_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/icon_detail_collect"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" />
+
+            <ImageView
+                android:id="@+id/self_driving_detail_activity_toolbar_shareimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/self_driving_detail_activity_collect_imageview"
+                android:background="@drawable/icon_relief_share"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" />
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_toLeftOf="@id/self_driving_detail_activity_toolbar_shareimg"-->
+            <!--android:layout_toRightOf="@id/self_driving_detail_activity_toolbar_backtext">-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="详情"
+                android:textSize="20sp" />
+            <!--</RelativeLayout>-->
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/self_driving_detail_activity_reply_relativelayout"
+        android:layout_below="@id/self_driving_detail_activity_toolbar"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/self_driving_detail_activity_headimg"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/personal_info_portrait"
+                    app:riv_border_color="@color/white"
+                    app:riv_border_width="1dp"
+                    app:riv_corner_radius="25dp"
+                    app:riv_mutate_background="true"
+                    app:riv_oval="false" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/self_driving_detail_activity_headimg">
+
+                    <TextView
+                        android:id="@+id/self_driving_detail_activity_name_Textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/black_self_drive"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/self_driving_detail_activity_timetext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/self_driving_detail_activity_name_Textview"
+                        android:layout_marginTop="10dp"
+                        android:text="活动日期："
+                        android:textColor="@color/gray_sub"
+                        android:textSize="13sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/self_driving_detail_activity_day_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/self_driving_detail_activity_name_Textview"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/self_driving_detail_activity_timetext"
+                        android:text=""
+                        android:textColor="@color/gray_sub"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/self_driving_detail_activity_apply_textview"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/self_apply_backcolor"
+                    android:text="马上报名"
+                    android:gravity="center"
+                    android:textColor="@color/white" />
+                <TextView
+                    android:id="@+id/self_driving_detail_activity_cancel_textview"
+                    android:visibility="gone"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/self_cancel_backcolor"
+                    android:text="取消活动"
+                    android:gravity="center"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/self_driving_detail_activity_people_layout"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+                <View
+                    android:id="@+id/self_driving_detail_activity_people_num_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/listview_line"/>
+                <TextView
+                    android:layout_below="@id/self_driving_detail_activity_people_num_line"
+                    android:id="@+id/self_driving_detail_activity_people_num"
+                    android:textColor="#909090"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="参加人数："/>
+                <TextView
+                    android:id="@+id/self_driving_detail_activity_people_sum"
+                    android:textColor="#909090"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="8"
+                    android:layout_toRightOf="@id/self_driving_detail_activity_people_num"/>
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="10dp"
+                    android:id="@+id/self_driving_detail_activity_people_roll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="参与名单"
+                    android:textColor="#909090"
+                    android:drawableRight="@drawable/arrow_right"/>
+
+                <View
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/listview_line"/>
+
+            </RelativeLayout>
+
+
+
+
+
+            <TextView
+                android:id="@+id/self_driving_detail_activity_content_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:textColor="@color/black_self_drive"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/self_driving_detail_activity_imageview_linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="评论列表"
+                android:textColor="@color/gary_list"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray_sub" />
+
+            <com.example.gtercn.car.widget.MyListView
+                android:id="@+id/self_driving_detail_activity_expandlistview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/gray_line"
+                android:dividerHeight="1px"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

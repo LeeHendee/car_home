@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_pop_radio"
+    android:orientation="vertical">
+
+
+    <!--<Button-->
+    <!--android:id="@+id/mydialog_phone1"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/white"-->
+    <!--android:paddingBottom="10dp"-->
+    <!--android:paddingLeft="60dp"-->
+    <!--android:paddingRight="60dp"-->
+    <!--android:paddingTop="10dp"-->
+    <!--android:text="2312312"-->
+    <!--android:textColor="@color/text_title_color"-->
+    <!--android:textSize="@dimen/activity_four_title" />-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:background="@color/theme_gray" />-->
+
+
+    <!--<Button-->
+    <!--android:id="@+id/mydialog_phone2"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/white"-->
+    <!--android:paddingBottom="10dp"-->
+    <!--android:paddingLeft="60dp"-->
+    <!--android:paddingRight="60dp"-->
+    <!--android:paddingTop="10dp"-->
+    <!--android:text="2312312"-->
+    <!--android:textColor="@color/text_title_color"-->
+    <!--android:textSize="@dimen/activity_four_title" />-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:background="@color/theme_gray" />-->
+    <ListView
+        android:id="@+id/mydialog_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_sub" />
+
+    <Button
+        android:id="@+id/mydialog_clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+
+        android:paddingTop="10dp"
+        android:text="取消"
+        android:textColor="@color/blue2"
+        android:textSize="@dimen/activity_four_title" />
+
+</LinearLayout>

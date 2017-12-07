@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:background="@color/listview_item_pressed"/>
+   <TextView
+       android:id="@+id/popupwindow_distance_nearby_textview"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:padding="15dp"
+       android:text="附近"
+       android:background="@drawable/backcolor_callback"/>
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+      android:background="@color/listview_item_pressed"/>
+
+   <TextView
+       android:id="@+id/popupwindow_distance1_textview"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:padding="15dp"
+       android:text="1km"
+       android:background="@drawable/backcolor_callback"/>
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:background="@color/listview_item_pressed"/>
+   <TextView
+       android:id="@+id/popupwindow_distance3_textview"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:padding="15dp"
+       android:text="3km"
+       android:background="@drawable/backcolor_callback"/>
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:background="@color/listview_item_pressed"/>
+   <TextView
+       android:id="@+id/popupwindow_distance5_textview"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:padding="15dp"
+       android:text="5km"
+       android:background="@drawable/backcolor_callback"/>
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:background="@color/listview_item_pressed"/>
+   <TextView
+       android:id="@+id/popupwindow_distance10_textview"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:padding="15dp"
+       android:text="10km"
+       android:background="@drawable/backcolor_callback"/>
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?><!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:orientation="vertical">-->
+
+<LinearLayout android:id="@+id/item_reply_to_replier_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="horizontal"
+    android:layout_weight="6"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:id="@+id/to_replier_replier_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="张三"
+            android:textColor="@color/blue3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:maxLines="1"
+            android:text="回复" />
+
+        <TextView
+            android:id="@+id/to_replier_to_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="李四"
+            android:textColor="@color/blue2"
+            android:layout_gravity="right|center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" : "
+            android:textColor="@color/blue2" />
+
+        <TextView
+            android:layout_weight="2"
+            android:id="@+id/to_replier_reply_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:maxLines="4"
+            android:text="" />
+        <!--<TextView-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/reply_content_bg"-->
+        <!--android:maxLines="5"-->
+        <!--android:text="vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv" />-->
+
+
+</LinearLayout><!--<View--><!--android:layout_width="match_parent"--><!--android:layout_height="1px"--><!--android:background="@color/gray9"--><!--/>--><!--</LinearLayout>-->

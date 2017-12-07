@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_pop_radio"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/pop_capture_camera"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:text="13110120119"
+            android:textColor="@color/blue_phone"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_gray" />
+
+        <Button
+            android:id="@+id/pop_capture_album"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:text="18666688899"
+            android:textColor="@color/blue_phone"
+            android:textSize="16sp" />
+        <!--<ListView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/pop_capture_listview"/>-->
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/pop_capture_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_pop_radio"
+
+        android:text="取消"
+        android:textColor="@color/blue_phone"
+        android:textSize="16sp" />
+
+</LinearLayout>

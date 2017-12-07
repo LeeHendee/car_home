@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<group>
+    <item
+        android:id="@+id/person_info"
+        app:icon="@drawable/icon_personal_message"
+        android:title="个人信息"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/my_favor"
+        android:icon="@drawable/icon_favorite"
+        android:title="我的收藏"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/my_question"
+        android:icon="@drawable/icon_my_question"
+        android:title="我的问题"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/my_article"
+        android:icon="@drawable/icon_my_article"
+        android:title="我的文章"
+        app:showAsAction="always"/>
+</group>
+
+    <item
+        android:id="@+id/modify_pwd"
+        android:icon="@drawable/icon_change_password"
+        android:title="修改密码"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/icon_exit"
+        android:title="退出登录"
+        app:showAsAction="always"/>
+</menu>

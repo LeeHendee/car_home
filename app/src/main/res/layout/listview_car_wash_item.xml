@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <ImageView
+        android:id="@+id/car_wash_item_imageview"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/icon_default1"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:id="@+id/listview_car_wash_right_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/car_wash_item_distance_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_car_distance"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="@color/gray_deep"
+            android:textSize="@dimen/find_promotion_time" />
+
+        <ImageView
+            android:id="@+id/car_wash_item_phone_imageview"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/icon_car_telphone"
+            android:paddingBottom="10dp"
+            android:scaleType="centerInside" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/car_wash_item_shuline"
+        android:layout_width="1dp"
+        android:layout_height="70dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/listview_car_wash_right_layout"
+        android:background="@color/line_gray"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/car_wash_item_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@id/car_wash_item_shuline"
+        android:layout_toRightOf="@id/car_wash_item_imageview">
+
+        <TextView
+            android:id="@+id/car_wash_item_title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text=""
+            android:textSize="@dimen/activity_four_title" />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/car_wash_item_title_textview"
+            android:orientation="horizontal">
+
+            <RatingBar
+                android:id="@+id/car_wash_item_ratingbar"
+                style="@style/roomRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="5"
+                android:stepSize="1" />
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/gray"
+                android:text="星级" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/car_wash_item_subtitle_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="@color/gray_sub"
+            android:textSize="@dimen/find_promotion_time" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

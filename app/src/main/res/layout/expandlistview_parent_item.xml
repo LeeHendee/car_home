@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+
+        android:id="@+id/expandlistview_parent_item_imageview"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/personal_info_portrait"
+        app:riv_border_color="@color/white"
+        app:riv_border_width="0.5dip"
+        app:riv_corner_radius="30dip"
+        app:riv_mutate_background="true"
+        app:riv_oval="false" />
+
+    <LinearLayout
+        android:id="@+id/expandlistview_parent_item_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/expandlistview_parent_item_imageview"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/expandlistview_parent_item_nametext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:text="12312"
+            android:textColor="@color/black_self_drive"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/expandlistview_parent_item_detailtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="asddddddddddddd"
+            android:textColor="@color/gray_comment_detail"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/expandlistview_parent_item_daytext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="asdasdasda"
+                android:textColor="@color/gary_list"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/expandlistview_parent_item_timestext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/expandlistview_parent_item_daytext"
+                android:text="asdasdasda"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/expandlistview_parent_item_allcomment_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:drawableLeft="@drawable/icon_shop_list_xia_arrow"
+                android:text="全部评论"
+                android:textColor="@color/gary_list"
+                android:textSize="14sp" />
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:id="@+id/expandlistview_parent_item_comment_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@id/expandlistview_parent_item_allcomment_textview"
+                android:drawableLeft="@drawable/icon_shop_list_xia_arrow"
+                android:text="评论"
+                android:textColor="@color/gary_list"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--<ListView-->
+        <!--android:id="@+id/expandlistview_parent_item_listview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="200dp"-->
+        <!--android:layout_below="@id/expandlistview_parent_item_linearlayout"-->
+        <!--android:visibility="gone" />-->
+    <!--<ListView-->
+    <!--android:id="@+id/expandlistview_parent_item_comment_listview"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/expandlistview_parent_item_linearlayout" />-->
+</RelativeLayout>

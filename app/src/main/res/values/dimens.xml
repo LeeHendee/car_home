@@ -1,0 +1,40 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!--标题-->
+    <dimen name="activity_title">20sp</dimen>
+    <!--二级标题-->
+    <dimen name="activity_two_title">18sp</dimen>
+    <!--三级标题-->
+    <dimen name="activity_three_title">17sp</dimen>
+    <!--四级标题-->
+    <dimen name="activity_four_title">16sp</dimen>
+    <!--时间-->
+    <dimen name="find_promotion_time">14sp</dimen>
+    <!--详情-->
+    <dimen name="find_promotion_detail">15sp</dimen>
+    <!--120dp-->
+    <dimen name="listview_wash_item">120dp</dimen>
+
+    <!--城市选择-->
+
+    <dimen name="side_letter_bar_letter_size">12sp</dimen>
+    <dimen name="side_letter_bar_width">36dp</dimen>
+    <dimen name="city_text_size">16sp</dimen>
+
+    <dimen name="body_padding_medium">10dp</dimen>
+    <dimen name="body_padding_large">10dp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_medium">18sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="text_size_xlarge">18sp</dimen>
+    <dimen name="speaker_image_size">36dp</dimen>
+    <dimen name="speaker_image_padding">8dp</dimen>
+    <dimen name="vendor_image_size">100dp</dimen>
+    <dimen name="titlebar">54dp</dimen>
+    <dimen name="actionbar_height">45dip</dimen>
+    <dimen name="actionbar_item_height">45dip</dimen>
+    <dimen name="actionbar_item_width">45dip</dimen>
+    <dimen name="toobar_height">56dp</dimen>
+</resources>

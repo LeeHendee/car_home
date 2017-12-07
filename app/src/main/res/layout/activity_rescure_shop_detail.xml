@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_rescure_shop_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gtercn.car.activity.RescureShopDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pager_bg">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/activity_rescure_shop_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toobar_height"
+            android:background="@color/toolbar_bg"
+            android:minHeight="?attr/actionBarSize">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:background="@drawable/backcolor_callback"
+                    android:id="@+id/rescure_shop_activity_callback_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="返回"
+                    android:drawableLeft="@drawable/icon_callback_arrow"
+                    android:drawablePadding="2dp"
+                    android:textColor="@color/toolbar_text_color"
+                    android:textSize="14sp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/rescue_shop_title"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="紧急救援"
+                    android:textColor="@color/text_title_color"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/rescue_shop_favorite"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:saveEnabled="true"
+                   />
+
+                <ImageView
+                    android:id="@+id/rescue_shop_share"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/rescue_shop_favorite"
+                    android:src="@drawable/icon_relief_share" />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <FrameLayout
+            android:id="@+id/rescue_shop_page_framelayout"
+            android:layout_below="@id/activity_rescure_shop_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            >
+            <ImageView
+                android:id="@+id/rescue_shop_iv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"/>
+            <com.example.gtercn.car.widget.CustomTopViewPager
+                android:id="@+id/rescue_shop_vp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+            <LinearLayout
+                android:id="@+id/rescue_shop_dots"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:gravity="center"
+                android:orientation="horizontal" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/rescue_shop_activity_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rescue_shop_page_framelayout"
+            android:background="@color/white"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/rescure_shop_activity_icon_shop_imageview"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/icon_relief_shop" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/rescure_shop_activity_icon_shop_imageview"
+                android:text="商家信息" />
+
+            <TextView
+                android:id="@+id/rescue_shop_btn"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:text="选择救援"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@color/orange" />
+            <TextView
+                android:id="@+id/rescue_shop_distance"
+                android:layout_toLeftOf="@+id/rescue_shop_btn"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text=""
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rescue_shop_activity_rl"
+            android:layout_marginTop="1dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/icon_relief_location" />
+
+                <TextView
+                    android:id="@+id/rescue_shop_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/rescue_shop_discription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/icon_relief_product" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="主营产品" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/rescue_shop_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:text="" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

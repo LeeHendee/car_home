@@ -1,0 +1,150 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.gtercn.car.fragment.HomeFragment">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/activity_home_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:layout_scrollFlags="scroll|enterAlways">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center"
+            android:text="发现"
+            android:textColor="@color/text_title_color"
+            android:textSize="@dimen/activity_title" />
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:scrollbars="none"
+      android:fillViewport="true">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+              <LinearLayout
+                  android:id="@+id/find_fragment_kongjian_layout"
+                  android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:layout_height="160dp">
+
+                  <ImageView
+                      android:id="@+id/find_fragment_img_link"
+                      android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_weight="1"
+                      android:background="@drawable/icon_banner"
+                      android:scaleType="fitXY" />
+
+              <LinearLayout
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="1"
+                 android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/green" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/blue3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/find_fragment_car_meets"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/orange"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/icon_drives_meet" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="车友会"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/activity_three_title" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/find_framelyout_self_driving_linearlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/blue4"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/icon_self_travel" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="自驾游"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/activity_three_title" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.flyco.tablayout.CommonTabLayout
+        android:id="@+id/find_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        app:tl_indicator_color="@color/blue2"
+        app:tl_indicator_margin_left="30dp"
+        app:tl_indicator_margin_right="30dp"
+        app:tl_tab_space_equal="true"
+        app:tl_textSelectColor="@color/blue2"
+        app:tl_textUnselectColor="@color/home_toolbar"
+        app:tl_textsize="@dimen/activity_two_title"
+        app:tl_underline_gravity="BOTTOM"
+        app:tl_underline_height="1dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/listview_line" />
+
+    <FrameLayout
+        android:id="@+id/find_framelyout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+      </LinearLayout>
+  </ScrollView>
+</LinearLayout>

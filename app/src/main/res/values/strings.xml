@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">顺驾天下</string>
+    <string name="app_version">Version 1.9</string>
+    <string name="click_exit_app">再按一次，退出应用</string>
+    <string name="expert_notice">达人榜</string>
+    <string name="expert_circle">达人圈</string>
+    <string name="expert_question">问题墙</string>
+    <string name="callback">返回</string>
+    <string name="car_repairing">修车</string>
+    <string name="car_wash">洗车</string>
+    <string name="tyre">轮胎</string>
+    <string name="maintain">保养</string>
+    <string name="shang_jia">商家列表</string>
+    <!--发现-->
+    <string name="promotion">促销</string>
+    <string name="message">资讯</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--ToastString-->
+    <string name="jian_she_zhong">正在建设中...</string>
+    <!--自驾游-->
+    <string name="scenic_spot_introduction">景点简介</string>
+    <string name="self_drive_strategy">自驾攻略</string>
+    <string name="conditions_overleaf">报名须知</string>
+    <string name="self_reply">回复</string>
+    <string name="null_login">请先登录！</string>
+    <!--城市选择-->
+    <string name="select_city">选择城市</string>
+    <string name="hot_city">热门城市</string>
+    <string name="located_city">定位城市</string>
+    <string name="hint_search_box">请输入城市名或拼音</string>
+    <string name="nothing_found">没有搜索结果~</string>
+    <string name="locating">正在定位…</string>
+    <string name="located_failed">定位失败</string>
+    <!--Dialog-->
+    <string name="dialog_data">正在加载...</string>
+    <string name="loading_data">正在加载数据...</string>
+    <string name="response_load_null">正在加载数据...</string>
+    <string name="verify_error">获取验证码失败</string>
+    <string name="dialog_commit">正在提交...</string>
+    <string name="response_commit_null">提交失败,请稍后重试!</string>
+    <string name="phone_null">请输入手机号</string>
+    <string name="phone_format_error">手机号码格式不正确</string>
+    <string name="verify_null">请输入验证码</string>
+    <string name="password_null">请输入密码</string>
+    <string name="confirm_password_null">请确认密码</string>
+    <string name="password_not_same">两次输入的密码不一致,请重新输入!</string>
+    <string name="submit_reply">正在提交回复,请稍等...</string>
+    <string name="submit_question">正在提交问题,请稍后...</string>
+
+
+    <string name="facebook_app_id">1266254913438718</string>
+
+
+    <string name="umeng_update_content">版本号：6.2.0\n1.更新QQsdk精简版，修复了QQ空间分享偶尔回调取消的bug\n2.更新QQsdk完整版，修复了QQ空间分享偶尔回调取消的bug\n3.修改了新浪微博精简版，在低版本的客户端上不能授权的问题\n4.修改了新浪微博精简版分享，在有客户端的情况下，切换账号，分享账号没有切换的问题\n</string>
+    <string name="umeng_home_title">U-Share产品Demo</string>
+    <string name="umeng_home_update">新版更新内容</string>
+    <string name="umeng_share_title">分享</string>
+    <string name="umeng_auth_title">授权</string>
+    <string name="umeng_delauth_title">删除授权</string>
+    <string name="umeng_getinfo_title">获取用户信息</string>
+    <string name="umeng_check_title">自检工具</string>
+    <string name="umeng_menu_title">分享菜单模板</string>
+
+    <string name="umeng_check_sign">检查签名</string>
+    <string name="umeng_check_sina">检查新浪</string>
+    <string name="umeng_check_wx">检查微信</string>
+    <string name="umeng_check_alipay">检查支付宝</string>
+    <string name="umeng_check_qq">检查qq</string>
+    <string name="umeng_check_fb">检查facebook</string>
+    <string name="umeng_check_vk">vkontakte</string>
+    <string name="umeng_choose_style">选择分享类型</string>
+
+    <string name="umeng_sharebutton_copy">复制文本</string>
+    <string name="umeng_sharebutton_copyurl">复制连接</string>
+
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="update_app">有新版本，现在是否更新 ？</string>
+    <string name="app_update_info">已是最新版本</string>
+
+</resources>

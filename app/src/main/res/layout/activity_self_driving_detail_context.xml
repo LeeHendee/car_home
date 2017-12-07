@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_self_driving_travel_detail">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:id="@+id/activity_self_driving_context_title_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="越野"
+                    android:textSize="17sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/activity_self_driving_context_title_textview">
+
+                    <TextView
+                        android:id="@+id/activity_self_driving_context_price_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="￥1450"
+                        android:textColor="@color/blue2"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_toRightOf="@id/activity_self_driving_context_price_textview"
+                        android:text="￥154"
+                        android:textColor="@color/alpha_gray"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/activity_self_driving_context_title_textview"
+                    android:drawableLeft="@drawable/icon_self_phone"
+                    android:gravity="center"
+                    android:paddingRight="10dp"
+                    android:text="14578952"
+                    android:textColor="@color/blue2" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/alpha_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/activity_self_driving_context_bourn_title_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="目的地" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/activity_self_driving_context_bourn_title_textview"
+                    android:text="asdasdasdsasda" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/icon_relief_location"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/alpha_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RatingBar
+                    android:id="@+id/activity_self_driving_context_ratingBar"
+                    style="@style/roomRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="3"
+                    android:stepSize="0.25" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/activity_self_driving_context_ratingBar"
+                    android:text="9.0分"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    android:id="@+id/activity_self_driving_context_evaluation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableRight="@drawable/icon_callback_arrow"
+                    android:gravity="center"
+                    android:paddingRight="10dp"
+                    android:text="425评价" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/gray_sub" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.flyco.tablayout.CommonTabLayout
+                    android:id="@+id/activity_self_driving_context_commonLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    app:tabGravity="fill"
+                    app:tabMode="fixed"
+                    app:tl_indicator_color="@color/blue2"
+                    app:tl_indicator_margin_left="30dp"
+                    app:tl_indicator_margin_right="30dp"
+                    app:tl_tab_space_equal="true"
+                    app:tl_textSelectColor="@color/blue2"
+                    app:tl_textUnselectColor="@color/home_toolbar"
+                    app:tl_textsize="@dimen/activity_two_title"
+                    app:tl_underline_gravity="BOTTOM"
+                    app:tl_underline_height="1dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray2" />
+
+                <FrameLayout
+                    android:id="@+id/activity_self_driving_context_commonLayout_framelayout"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

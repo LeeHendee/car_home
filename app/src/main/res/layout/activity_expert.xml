@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar_view"/>
+
+<!--    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray"
+        />-->
+    <com.flyco.tablayout.CommonTabLayout
+        android:id="@+id/expert_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        app:tl_indicator_margin_left="10dp"
+        app:tl_indicator_margin_right="10dp"
+        app:tl_tab_space_equal="true"
+        app:tl_textSelectColor="@color/blue2"
+        app:tl_textUnselectColor="@color/home_toolbar"
+        app:tl_textsize="16sp"
+        app:tl_underline_gravity="BOTTOM"
+        app:tl_underline_height="1dp"
+        app:tl_divider_color="@color/gray_line"
+        app:tl_divider_width="1px"
+        />
+
+    <!--<android.support.design.widget.TabLayout-->
+    <!--android:id="@+id/expert_tab"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="45dp"/>-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_line"
+        />
+
+    <FrameLayout
+        android:id="@+id/expert_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

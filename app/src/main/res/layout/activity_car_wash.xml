@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/activity_car_wash_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/toolbar_bg">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/four_activity_toolbar_backcall_relativelayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@drawable/backcolor_callback"
+                android:paddingLeft="10dp">
+                <ImageView
+                    android:id="@+id/self_driving_detail_activity_toolbar_backtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_callback_arrow" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/self_driving_detail_activity_toolbar_backtext"
+                    android:paddingRight="10dp"
+                    android:text="返回" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/activity_car_wash_toolbar_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="商家列表"
+                android:textColor="@color/text_title_color"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <!--<include-->
+    <!--android:id="@+id/car_wash_include"-->
+    <!--layout="@layout/toolbar_view" />-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/listview_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="1px"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/line_gray" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/activity_car_wash_distance_relativelayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/activity_car_wash_distance_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="按距离"
+                    android:textColor="@color/text_title_color"
+                    android:textSize="@dimen/activity_four_title" />
+
+                <ImageView
+                    android:id="@+id/activity_car_wash_distance_arrow_Imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toRightOf="@id/activity_car_wash_distance_textview"
+                    android:src="@drawable/icon_shop_list_xia_arrow" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/line_gray" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/activity_car_wash_grade_relativelayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/activity_car_wash_grade_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="按星级"
+                    android:textColor="@color/text_title_color"
+                    android:textSize="@dimen/activity_four_title" />
+
+                <ImageView
+                    android:id="@+id/activity_car_wash_grade_arrow_Imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toRightOf="@id/activity_car_wash_grade_textview"
+                    android:src="@drawable/icon_shop_list_xia_arrow" />
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/listview_line" />
+
+    <include
+        android:id="@+id/activity_four_serve_include"
+        layout="@layout/custom_empty_view"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/activity_car_wash_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="1px"
+        android:divider="@color/listview_line"
+        android:scrollbars="none">
+
+    </ListView>
+</LinearLayout>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gtercn.car">
+
+    <!-- base -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <!-- 百度API所需权限 -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.BODY_SENSORS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCES_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- 来电消音 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 摄影机 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+
+    <application
+        android:name=".base.CarApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_app"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme.Base">
+        <activity
+            android:name=".activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.GuideActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.ExpertActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.ExpertInfoActivity" />
+        <activity android:name=".activity.RescueDetailActivity" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".activity.RegisterActivity" />
+        <activity
+            android:name=".activity.CityPickerActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".activity.RescureShopDetailActivity" />
+        <activity android:name=".activity.UrgentRescueActivity" />
+        <activity android:name=".activity.MessageActivity" />
+        <activity android:name=".activity.PromotionActivity" />
+        <activity android:name=".activity.SelfDrivingTravelActivity" />
+        <activity android:name=".activity.FourServeActivity" />
+        <activity android:name=".activity.ForgetPasswordStepOneActivity" />
+        <activity android:name=".activity.ForgetPasswordStepTwoActivity" />
+        <activity android:name=".activity.AlbumGalleryActivity" />
+        <activity android:name=".activity.AskQuestionActivity" />
+        <activity android:name=".activity.ExpertCircleDetailActivity" />
+        <activity android:name=".activity.ExpertQuestionDetailActivity" />
+        <activity android:name=".activity.FourServeDetailActivity" />
+        <activity android:name=".activity.BDNavigationActivity" />
+        <activity android:name=".activity.BDNaviGuideActivity" />
+        <activity android:name=".activity.MyFavoriteActivity" />
+        <activity android:name=".activity.HomeSearchActivity" />
+        <activity android:name=".activity.AboutUsActivity" />
+        <activity android:name=".activity.AdvertisementActivity" />
+        <activity android:name=".activity.MyQuestionActivity" />
+        <activity android:name=".activity.AdviceFeedbackActivity" />
+        <activity android:name=".activity.ContactUsActivity" />
+        <activity android:name=".activity.PersonalInfoActivity" />
+        <activity android:name=".activity.PersonalInfoEditorActivity" />
+        <activity android:name=".activity.PhotoViewActivity" />
+        <activity android:name=".activity.MyActivityActivity" />
+
+        <service android:name=".service.AppService" />
+
+        <!-- update and install receiver -->
+        <receiver android:name=".update.AppNormalUpdateBroadcastReceiver"
+            android:exported="false"
+            >
+            <intent-filter>
+                <action android:name="com.example.gtercn.car.APP_UPDATE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".update.AppForceUpdateBroadcastReceiver"
+            android:exported="false"
+            >
+            <intent-filter>
+                <action android:name="com.example.gtercn.car.APP_FORCE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".update.AppInstallManagerBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- baidu map related -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="bMtqd0TpRniu8omI7cv33GkDhUQW8LMk" />
+
+        <activity android:name=".activity.SelfDrivingTravelDetailActivity" />
+        <activity android:name=".activity.SelfDrivingIssueActivity" />
+
+        <!-- Umeng related -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="58c6398404e205985800045f" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="gtercn" />
+
+        <!-- share of WeiXin -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- share of QQ -->
+        <!-- qq精简版： -->
+        <activity
+            android:name="com.umeng.qq.tencent.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.umeng.qq.tencent.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- share of SinaWeiBo -->
+        <activity
+            android:name=".WBShareActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <service
+            android:name="com.sina.weibo.sdk.net.DownloadService"
+            android:exported="false" />
+        <!-- sina微博精简版 -->
+        <activity
+            android:name="com.umeng.socialize.editorpage.ShareActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.UMDefault" />
+        <activity android:name=".activity.SelfSubClassCommentActivity" />
+
+        <provider
+            android:name=".db.FourServiceContentProvider"
+            android:authorities="com.example.gtercn.car.provider.four"
+            android:exported="false"></provider>
+        <provider
+            android:name=".db.RescueServiceContentProvider"
+            android:authorities="com.example.gtercn.car.provider.rescue"
+            android:exported="false"></provider>
+
+        <activity android:name=".activity.PeopleRollActivity"></activity>
+    </application>
+
+</manifest>

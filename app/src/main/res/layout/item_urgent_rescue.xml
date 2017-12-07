@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rescue_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    >
+
+    <ImageView
+        android:id="@+id/rescue_company_iv"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:gravity="center_vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/rescue_company_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="一路平安救援公司"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/text_title_color"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/icon_distance"
+                android:maxLines="1"
+                android:ellipsize="end" />
+
+            <TextView
+                android:id="@+id/rescue_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/text_title_color"
+                android:layout_centerVertical="true"
+                />
+            <ImageView
+                android:id="@+id/icon_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_car_distance"
+                android:layout_toLeftOf="@+id/rescue_distance"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            >
+            <RatingBar
+                android:id="@+id/rescue_company_score_iv"
+                style="@style/roomRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="5"
+                android:stepSize="1" />
+
+            <TextView
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="星级"
+                android:textColor="@color/text_title_color" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/rescue_select_btn"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            android:text="选择救援"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@color/orange" />
+
+    </LinearLayout>
+
+</LinearLayout>

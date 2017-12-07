@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_self_sub_class_comment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gtercn.car.activity.SelfSubClassCommentActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/self_subclass_avtivity_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toobar_height"
+        android:background="@color/toolbar_bg"
+        android:minHeight="?attr/actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:background="@drawable/backcolor_callback"
+                android:id="@+id/self_subclass_avtivity_toolbar_callback_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:drawableLeft="@drawable/icon_callback_arrow"
+                android:drawablePadding="2dp"
+                android:gravity="center_vertical"
+                android:text="返回"
+                android:textColor="@color/text_title_color" />
+
+            <TextView
+                android:id="@+id/self_subclass_avtivity_toolbar_title_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="全部评论"
+                android:textColor="@color/text_title_color"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_below="@id/self_subclass_avtivity_toolbar"
+        android:id="@+id/activity_self_subclass_header_imageview"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_setting_header_compile"
+        app:riv_border_color="@color/white"
+        app:riv_border_width="0.5dip"
+        app:riv_corner_radius="30dip"
+        app:riv_mutate_background="true"
+        app:riv_oval="false" />
+
+    <LinearLayout
+        android:layout_below="@id/self_subclass_avtivity_toolbar"
+        android:id="@+id/self_subclass_avtivity_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/activity_self_subclass_header_imageview"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/self_subclass_avtivity_nameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:text=""
+            android:textColor="@color/black_self_drive"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/self_subclass_avtivity_context"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:textColor="@color/gray_comment_detail"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/self_subclass_avtivity_daytext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text=""
+                android:textColor="@color/gary_list"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/expandlistview_parent_item_timestext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/self_subclass_avtivity_daytext"
+                android:text="asdasdasda"
+                android:visibility="gone" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/self_subclass_avtivity_allcommenttext"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:drawableLeft="@drawable/icon_shop_list_xia_arrow"-->
+            <!--android:text="全部评价"-->
+            <!--android:textColor="@color/gary_list"-->
+            <!--android:textSize="14sp" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/self_subclass_avtivity_comment_textview"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:layout_toLeftOf="@id/self_subclass_avtivity_allcommenttext"-->
+            <!--android:drawableLeft="@drawable/icon_shop_list_xia_arrow"-->
+            <!--android:text="评论"-->
+            <!--android:textColor="@color/gary_list"-->
+            <!--android:textSize="14sp" />-->
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/self_subclass_avtivity_viewline"
+        android:layout_below="@id/self_subclass_avtivity_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/listview_line"/>
+
+    <RelativeLayout
+        android:id="@+id/self_sub_class_comment_reply_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/background_orange"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+
+        <RelativeLayout
+            android:id="@+id/self_sub_class_edittext_relativelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/self_driving_detail_activity_reply_relativelayout_rentext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="人回复"
+                android:textColor="@color/gray_huifu" />
+
+            <TextView
+                android:id="@+id/self_subclass_avtivity_sumtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/self_driving_detail_activity_reply_relativelayout_rentext"
+                android:text="0"
+                android:textColor="@color/gray_huifu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/self_subclass_avtivity_sumtext"
+                android:text="已有"
+                android:textColor="@color/gray_huifu" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/self_sub_class_edittext_sendtext"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/blue2"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="发送"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/self_sub_class_comment_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/self_sub_class_edittext_sendtext"
+            android:background="@null"
+            android:hint="回复"
+            android:textColorHint="@color/gray_comment_detail"
+            android:textColor="@color/black_self_drive"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+
+    <ListView
+        android:scrollbars="none"
+        android:id="@+id/self_subclass_avtivity_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/self_sub_class_comment_reply_relativelayout"
+        android:layout_below="@id/self_subclass_avtivity_viewline" />
+
+</RelativeLayout>
